@@ -60,10 +60,10 @@ print("\nVocê tem ",age,"anos.")
 
 print("\n=== Status Habilitação ===")
 print()
-if age < 18:
-    print("\nVocê não tem a idade mínima para dirigir.\nFaltam",18 - age,"anos.")
-elif age == 17:
+if age == 17:
     print("\nVocê não tem a idade mínima para dirigir.\nFalta 1 ano.")
+elif age < 18:
+    print("\nVocê não tem a idade mínima para dirigir.\nFaltam",18 - age,"anos.")
 elif age == 18 and age <= 20:
     print("\nVocê está autorizado a solicitar habilitação para categorias A e B.")
 else:
