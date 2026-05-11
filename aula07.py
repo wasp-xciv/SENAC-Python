@@ -47,5 +47,5 @@ while contador <= 4:
     contador += 1
     soma += nota
 
-print("Média final:", soma/4)
+print(f"Média final: {soma/4:,.1f}")
 
