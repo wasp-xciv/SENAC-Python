@@ -39,13 +39,44 @@
 
 # print("Fim")
 
-#O Sistema de Notas 2.0:
-contador = 1
-soma = 0
-while contador <= 4:
-    nota = float(input(f"Insira a {contador}º nota: "))
-    contador += 1
-    soma += nota
+# #O Sistema de Notas 2.0:
 
-print(f"Média final: {soma/4:,.1f}")
+# r = "S"
+# while r == "S":
+#     contador = 1
+#     soma = 0
+#     while contador <= 4:
+#         nota = float(input(f"Insira a {contador}º nota: "))
+#         contador += 1
+#         soma += nota
+#     media = soma/4
+#     print(f"A soma das notas é {soma}. A média final: {media:,.1f}.")
+#     if media <= 4:
+#         print("Reprovado")
+#     elif media <=6:
+#         print("Recuperação")
+#     else:
+#         print("Aprovado")
+#     r = input("Deseja continuar? (S/N): ").lower().strip()[0]
 
+
+while True:
+    contador = 1
+    soma = 0
+    while contador <= 4:
+        nota = float(input(f"Insira a {contador}º nota: "))
+        contador += 1
+        soma += nota
+    media = soma/4
+    print(f"A soma das notas é {soma}. A média final: {media:,.1f}.")
+    if media <= 4:
+        print("Reprovado")
+    elif media <=6:
+        print("Recuperação")
+    else:
+        print("Aprovado")
+
+    r = input("Deseja continuar? (Sim/Não): ").lower().strip()[0]
+    if r != "s":
+        break
+    
