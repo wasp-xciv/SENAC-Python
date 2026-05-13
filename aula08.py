@@ -63,5 +63,5 @@ while tentativas != 0:
         break
     tentativas -= 1
 
-if tentativas == 0:
+else:
     print("Acesso Bloqueado!")
