@@ -20,12 +20,23 @@
 
 # *******
 #Criação de Senha:
-user = input("Digite seu usuário: ")
-password = input("Digite sua senha: ")
-while password != "banana":
-    print("Senha Incorreta.")
-    password = input("Digite sua senha: ")
+# user = input("Digite seu usuário: ")
+# password = input("Digite sua senha: ")
+# while password != "banana":
+#     print("Senha Incorreta.")
+#     password = input("Digite sua senha: ")
 
-print("Acesso Liberado")
+# print("Acesso Liberado")
+
+##Outra forma:
+user = input("Digite seu usuário: ")
+while True:
+    password = input("Digite sua senha: ")
+    if password != "banana":
+        print("Senha Incorreta.")
+        continue
+    else:
+        print("Acesso Liberado")
+        break
 
     
