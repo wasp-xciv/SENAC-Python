@@ -55,13 +55,13 @@
 
 # Outra forma:
 user = input("Digite seu usuário: ")
-tentativas = 0
-while tentativas < 3:
+tentativas = 3
+while tentativas != 0:
     password = input("Digite sua senha: ")
     if password == "banana":
         print("Acesso Liberado!")
         break
-    tentativas += 1
+    tentativas -= 1
 
-if tentativas == 3:
+if tentativas == 0:
     print("Acesso Bloqueado!")
