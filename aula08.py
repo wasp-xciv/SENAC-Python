@@ -19,7 +19,7 @@
 
 
 # *******
-#Criação de Senha:
+# Criação de Senha:
 # user = input("Digite seu usuário: ")
 # password = input("Digite sua senha: ")
 # while password != "banana":
@@ -29,14 +29,39 @@
 # print("Acesso Liberado")
 
 ##Outra forma:
-user = input("Digite seu usuário: ")
-while True:
-    password = input("Digite sua senha: ")
-    if password != "banana":
-        print("Senha Incorreta.")
-        continue
-    else:
-        print("Acesso Liberado")
-        break
+# user = input("Digite seu usuário: ")
+# while True:
+#     password = input("Digite sua senha: ")
+#     if password != "banana":
+#         print("Senha Incorreta.")
+#         continue
+#     else:
+#         print("Acesso Liberado")
+#         break
 
-    
+# Criação de Senha:
+# user = input("Digite seu usuário: ")
+# tentativas = 0
+# while tentativas < 3:
+#     password = input("Digite sua senha: ")
+#     if password == "banana":
+#         print("Acesso Liberado!")
+#         break
+#     elif tentativas == 3:
+#         print("Acesso Bloqueado!")
+#     else:
+#         print(f"Senha Incorreta. Tentativa {tentativas}.")
+#     tentativas += 1
+
+# Outra forma:
+user = input("Digite seu usuário: ")
+tentativas = 0
+while tentativas < 3:
+    password = input("Digite sua senha: ")
+    if password == "banana":
+        print("Acesso Liberado!")
+        break
+    tentativas += 1
+
+if tentativas == 3:
+    print("Acesso Bloqueado!")
