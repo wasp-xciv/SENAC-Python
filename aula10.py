@@ -62,3 +62,4 @@ while True:
        continue
     else:
         break
+#tentar descobrir como fazer a divisão apropriada
