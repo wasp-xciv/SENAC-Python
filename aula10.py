@@ -58,5 +58,7 @@ while True:
     else:
         print("Operação inválida.")
     loop = input("Deseja continuar?\ns/n: ").strip().lower()[0]
-    if loop == "n":
-       break
+    if loop == "s":
+       continue
+    else:
+        break
