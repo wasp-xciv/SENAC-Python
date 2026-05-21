@@ -24,10 +24,11 @@
 #     sleep(0.70)
 
 # For também inspira economia. No exemplo da inserção das notas:
-# soma = 0
-# for c in range (1,5):
-#     print(input(f"Informe a {c}º nota: "))
-#     soma += c
+notas = []
+for c in range (1,5):
+    print(input(f"Informe a {c}º nota: "))
+    notas.append(c)
+print(notas)
 
 # for i in range (1,11):
 #     resultado = 3*i
