@@ -80,16 +80,22 @@ print(f"Telefone:\n{clientes[1]}")
 
 print("\nLista de Clientes:",clientes)
 print("*********"*10)
-clientes1 = []
+
+cad_clientes = []
+cad_clientes.append(clientes[:])
+print(f"Lista Cadastro de Clientes:\n{cad_clientes}")
+
+clientes.clear()
+clientes = []
 print("Informe o nome e telefone:")
 for cliente in range(2):
-    clientes1.append(input())
+    clientes.append(input())
 print("*********"*8)
-print(f"\nCliente:\n{clientes1[0]}\n")
-print(f"Telefone:\n{clientes1[1]}")
+print(f"\nCliente:\n{clientes[0]}\n")
+print(f"Telefone:\n{clientes[1]}")
 
 print("\nLista de Clientes:",clientes)
 
 cad_clientes = []
-cad_clientes.append(clientes+clientes1)
+cad_clientes.append(clientes[:])
 print(f"Lista Cadastro de Clientes:\n{cad_clientes}")
