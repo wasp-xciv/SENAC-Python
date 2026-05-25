@@ -87,25 +87,51 @@
 
 
 #Cadastro de clientes com .append e loop:
-cliente = []
-cad_clientes = []
+# cliente = []
+# cad_clientes = []
+# while True:
+#     cad = input("Deseja cadastrar um cliente?(s/n):\n")
+#     if cad == "n":
+#         break
+#     elif cad == "s":
+#         cliente.append(input("Nome do cliente: "))
+#         cliente.append(int(input("Idade do cliente: ")))
+#         cliente.append(input("Telefone do cliente: "))
+#         cad_clientes.append(cliente[:])
+#         cliente.clear()
+#     else:
+#         print("Opção inválida. Tente novamente.")
+#         continue
+# print()
+# listar = input("Deseja listar os clientes cadastrados?(s/n):\n")
+# if listar == "s":
+#     cad_clientes.sort() #Listar em ordem alfabética
+#     for cliente in cad_clientes:
+#         print("*"*20)
+#         print(f"Cliente: {cliente[0]}\nIdade: {cliente[1]} anos\nTelefone: {cliente[2]}")
+
+produto = []
+cad_produtos = []
 while True:
-    cad = input("Deseja cadastrar um cliente?(s/n):\n")
+    cad = input("Deseja cadastrar um produto?(s/n):\n")
     if cad == "n":
         break
     elif cad == "s":
-        cliente.append(input("Nome do cliente: "))
-        cliente.append(int(input("Idade do cliente: ")))
-        cliente.append(input("Telefone do cliente: "))
-        cad_clientes.append(cliente[:])
-        cliente.clear()
+        produto.append(input("Nome do produto: "))
+        produto.append(input("Nome do autor: "))
+        produto.append(int(input("Ano de publicação: ")))
+        produto.append(float(input("Valor do produto: ")))
+        produto.append(int(input("Quantidade disponível em estoque: ")))
+        cad_produtos.append(produto[:])
+        produto.clear()
     else:
         print("Opção inválida. Tente novamente.")
         continue
 print()
-listar = input("Deseja listar os clientes cadastrados?(s/n):\n")
+listar = input("Deseja listar os produtos disponíveis?(s/n):\n")
 if listar == "s":
-    cad_clientes.sort() #Listar em ordem alfabética
-    for cliente in cad_clientes:
+    cad_produtos.sort()
+    for produto in cad_produtos:
         print("*"*20)
-        print(f"Cliente: {cliente[0]}\nIdade: {cliente[1]} anos\nTelefone: {cliente[2]}")
+        print(f"Nome do produto: {produto[0]}\nAutor(a): {produto[1]}\nAno: {produto[2]}\n"
+              f"Valor: R${produto[3]:,.2f} reais\nDisponíveis: {produto[4]} unidades")
