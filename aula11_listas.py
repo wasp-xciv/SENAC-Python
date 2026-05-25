@@ -85,7 +85,7 @@ cad_clientes = []
 cad_clientes.append(clientes[:])
 print(f"Lista Cadastro de Clientes:\n{cad_clientes}")
 
-clientes.clear()
+clientes.clear() #A lista fica vazia
 clientes = []
 print("Informe o nome e telefone:")
 for cliente in range(2):
