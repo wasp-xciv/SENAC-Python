@@ -135,3 +135,4 @@ if listar == "s":
         print("*"*20)
         print(f"Nome do produto: {produto[0]}\nAutor(a): {produto[1]}\nAno: {produto[2]}\n"
               f"Valor: R${produto[3]:,.2f} reais\nDisponíveis: {produto[4]} unidades")
+        
