@@ -54,27 +54,29 @@ while option != "0":
                     print("=== Cliente atualizado com sucesso! ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===")
             except ValueError:
                 print("=== ╰（‵□′）╯ Digite um número válido! ╰（‵□′）╯ ===")
-
             print()
-    # elif option == "4":
-    #     print("\n4 - Excluir cliente")
-    #     if cliente_cadastrado:
-    #         confirm = input("\nConfirme: (S/N): ").strip().upper()[0]
-    #         if confirm == "S":
-    #             cad = ""
-    #             phone_number = ""
-    #             email = ""
-    #             address = ""
-    #             cliente_cadastrado = False
-    #             print("\n=== Cadastro excluído ===")
-    #             print()
-    #         else:
-    #             print("\n=== Exclusão cancelada ===")
-    #             print()
-    #     else:
-    #         print("=== Cliente não cadastrado ===")
-    #         print()        
+            
+    elif option == "4":
+        print("\n4 - Excluir cliente")
+        if len(nomes_clientes) == 0:
+            print("=== Não há clientes para excluir (；′⌒`) ===")
+        else:
+            for i in range(len(nomes_clientes)):
+                print(f"{i} - {nomes_clientes[i]}")
+            
+            try:
+                indice = int(input("Digite o número do cliente que deseja excluir:\n"))
+                if indice <0 or indice >= len(nomes_clientes):
+                    print("=== ╰（‵□′）╯ ÍNDICE INVÁLIDO ╰（‵□′）╯ ===")
+                else:
+                    nomes_clientes.pop(indice)
+                    telefone_clientes.pop(indice)
+                    print("=== Cliente excluído com sucesso! ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===")
+            except ValueError:
+                print("=== ╰（‵□′）╯ Digite um número válido! ╰（‵□′）╯ ===")
+            print()
+
     elif option == "0":
-        print("\nPrograma encerrado.")
+        print("\n=== Programa encerrado ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===")
     else:
-        print("Opção inválida. Tente novamente.")
+        print("=== （︶^︶） Opção inválida. Tente novamente （︶^︶） === ")
