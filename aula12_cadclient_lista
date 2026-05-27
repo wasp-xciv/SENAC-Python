@@ -3,7 +3,7 @@ option = ""
 nomes_clientes = []
 telefone_clientes = []
 
-while option != "0":
+while option != 0:
     print("=== MENU CLIENTE ===\n1 - Cadastrar cliente\n2 - Listar cliente\n3 - Editar cliente\n4 - Excluir cliente\n0 - Sair")
     option = input("\nEscolha uma opção: ")
     if option == "1":
@@ -18,7 +18,7 @@ while option != "0":
         else:
             nomes_clientes.append(nome)
             telefone_clientes.append(telefone)
-            print("\n=== Cliente cadastrado com sucesso! ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===") #Windows + . é o comando que puxa emojis, gifs, etc
+            print("\n=== Cliente cadastrado com sucesso! ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===") #Windows + . é o comando que puxa emojis, gifs, etc    
         print()
 
     elif option == "2": #essa seção trabalhará com o len da lista
@@ -55,7 +55,7 @@ while option != "0":
             except ValueError:
                 print("=== ╰（‵□′）╯ Digite um número válido! ╰（‵□′）╯ ===")
             print()
-            
+
     elif option == "4":
         print("\n4 - Excluir cliente")
         if len(nomes_clientes) == 0:
@@ -78,5 +78,5 @@ while option != "0":
 
     elif option == "0":
         print("\n=== Programa encerrado ☆*: .｡. o(≧▽≦)o .｡.:*☆ ===")
-    else:
-        print("=== （︶^︶） Opção inválida. Tente novamente （︶^︶） === ")
+else:
+    print("=== （︶^︶） Opção inválida. Tente novamente （︶^︶） === ")
