@@ -1,27 +1,27 @@
 #For e Range
 
-# for contador in range (1,21):
-#     print("repetiu",contador,"vezes.")
-# print("=== Fim ===")
+for contador in range (1,21):
+    print("repetiu",contador,"vezes.")
+print("=== Fim ===")
 
 # # para for, o contador sempre considera o primeiro número, mas NÃO imprime o último.
 # # Comparação com while:
 
-# i = 0
-# while i < 10:
-#     i += 1
-#     print("repetiu",i,"vezes")
-# print("=== Fim ===")
+i = 0
+while i < 10:
+    i += 1
+    print("repetiu",i,"vezes")
+print("=== Fim ===")
 
-# for contador in range (10,100,10):
-#     print("repetiu",contador,"vezes")
-# print("=== Fim ===")
+for contador in range (10,100,10):
+    print("repetiu",contador,"vezes")
+print("=== Fim ===")
 
 # O salto:
-# from time import sleep
-# for i in range (10,-1,-1):
-#     print("repetiu",i,"vezes")
-#     sleep(0.70)
+from time import sleep
+for i in range (10,-1,-1):
+    print("repetiu",i,"vezes")
+    sleep(0.70)
 
 # For também inspira economia. No exemplo da inserção das notas:
 notas = []
@@ -30,11 +30,11 @@ for c in range (1,5):
     notas.append(c)
 print(notas)
 
-# for i in range (1,11):
-#     resultado = 3*i
-#     print(f"3 x {i} = {resultado}")
+for i in range (1,11):
+    resultado = 3*i
+    print(f"3 x {i} = {resultado}")
 
-
+#Tabuada:
 while True:
     num = int(input("Escolha um número da tabuada: "))
     operacao = input("Escolha a operação:\nAdição(+)\nSubtração(-)\nMultiplicação(*)\nDivisão(/)\n")
