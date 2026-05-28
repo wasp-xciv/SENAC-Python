@@ -24,7 +24,16 @@ while option != "0":
             produtos.append(prod)
             cod_produtos.append(cod)
             print("\n=== Produto cadastrado com sucesso! ===")
-            # new = (input("Deseja cadastrar mais algum produto?(s/n): "))
+            new = (input("Deseja cadastrar mais algum produto?(s/n): ")).strip().lower()[0]
+            while new != "n":
+                prod = input("Digite o nome do produto: ")
+                cod = input("Digite o código: ")
+                produtos.append(prod)
+                cod_produtos.append(cod)
+                print("\n=== Produto cadastrado com sucesso! ===")
+                new = (input("Deseja cadastrar mais algum produto?(s/n): ")).strip().lower()[0]
+                if new != "s":
+                    break
             
     elif option == "2":
         print(f"\n2 - Listar produtos")
@@ -56,9 +65,20 @@ while option != "0":
                     if novo_cod != "":
                         cod_produtos[indice] = novo_cod
                     print("=== Produto atualizado com sucesso! ===")
-            
+                    new = (input("Deseja editar mais algum produto?(s/n): ")).strip().lower()[0]
+                    while new != "n":
+                        novo_prod = input("Novo nome (Enter para manter):\n")
+                        novo_cod = input("Novo código do produto (Enter para manter):\n")
+                        if novo_prod != "":
+                            produtos[indice] = novo_prod
+                        if novo_cod != "":
+                            cod_produtos[indice] = novo_cod
+                        print("=== Produto atualizado com sucesso! ===")
+                        new = (input("Deseja editar mais algum produto?(s/n): ")).strip().lower()[0]
+                        if new != "s":
+                            break
             except ValueError:
-                print("=== Digite um número válido!")
+                print("=== Digite um número válido! ===")
             print()
 
     elif option == "4":
