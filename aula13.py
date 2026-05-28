@@ -44,7 +44,7 @@ while option != "0":
                 print(f"{p} - {produtos[p]}\nCódigo do produto: {cod_produtos[p]}")
             print()
     
-    elif option == "3":
+    elif option == "3": #refazer!
         print("\n3 - Editar produtos:")
         if len(produtos) == 0:
             print("=== Nenhum produto para editar! ===")
@@ -96,6 +96,14 @@ while option != "0":
                     produtos.pop(indice)
                     cod_produtos.pop(indice)
                     print("=== Cliente excluído com sucesso! ===")
+                    new = (input("Deseja excluir mais algum produto?(s/n): ")).strip().lower()[0]
+                    while new != "n":
+                        produtos.pop(indice)
+                        cod_produtos.pop(indice)
+                        print("=== Cliente excluído com sucesso! ===")
+                        new = (input("Deseja excluir mais algum produto?(s/n): ")).strip().lower()[0]
+                        if new != "s":
+                            break
             except ValueError:
                 print("=== Digite um número válido! ===")
             print()
