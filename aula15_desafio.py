@@ -40,6 +40,8 @@ print(f"\nO valor total dos produtos é R${total:,.2f}")
 # turma.
 # Dados iniciais
 notas = (7.5, 4.0, 6.5, 9.0, 3.5, 8.0)
+total = 0
+aprovados = 0
 
 # Objetivos:
 
@@ -51,6 +53,7 @@ notas = (7.5, 4.0, 6.5, 9.0, 3.5, 8.0)
 
 for nota in notas: #é importante diferenciar valor de índice
      if nota >= 7.0:
+         aprovados +=1
          print(f"Nota - {nota}\nStatus - Aprovado!") #variável 'nota' sozinha, ao invés de inserida dentro de 'notas'
      elif nota >5.0 and nota <7.0:
          print(f"Nota - {nota}\nStatus - Em Recuperação!")
@@ -62,7 +65,7 @@ print()
 print("=== Média da turma: ===\n")
 
 # media = sum(notas)/len(notas)   #MUITO mais fácil
-total = 0
+
 for nota in range(len(notas)):
     total += notas[nota]
 media = total/len(notas)
@@ -73,9 +76,17 @@ print(f"A média da turma é {media:.1f}")
 print()
 print("=== Aprovados ===\n")
 aprovados = 0
-for nota in notas:
-    if nota >= 7.0:
-        aprovados += 1
+# for nota in notas:
+#     if nota >= 7.0:
+#         aprovados += 1
+
+# for index,nota in enumerate(notas):     #outra maneira de resolver
+#     if notas[index] >= 7.0:
+#         aprovados += 1
+
+for nota in range(len(notas)):      #oooooooutra maneira de resolver
+    if notas[nota] >= 7.0:
+        aprovados +=1
 
 print(f"{aprovados} alunos foram aprovados!")
 
