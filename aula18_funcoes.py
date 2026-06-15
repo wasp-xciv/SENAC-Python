@@ -77,34 +77,48 @@ saudacao()
 # listar_alunos()
 
 ##Resultados com return: a exportação de uma operação dentro da função.
-def soma(a,b):
-    resultado = a + b
-    return resultado
-total = soma(4,9)
-print(f"O resultado foi {total}.")
+# def soma(a,b):
+#     resultado = a + b
+#     return resultado
+# total = soma(4,9)
+# print(f"O resultado foi {total}.")
 
-###############################
-def calcular_idade(birthyear,current_year=2026):
-    idade = current_year - birthyear
-    return idade
+# ###############################
+# def calcular_idade(birthyear,current_year=2026):
+#     idade = current_year - birthyear
+#     return idade
 
-idade_xav = calcular_idade(1800) ##aqui é informado apenas o ano de nascimento, a função completa com o paramêtro current_year
-print(f"Xavier tem {idade_xav} anos.")
+# idade_xav = calcular_idade(1800) ##aqui é informado apenas o ano de nascimento, a função completa com o paramêtro current_year
+# print(f"Xavier tem {idade_xav} anos.")
 
-idade_zay = calcular_idade(1993,2010) #aqui o valor 2026 do parâmetro current_year é ignorado, sendo substituído por outro ano
-print(f"Zayne tem {idade_zay} anos")
+# idade_zay = calcular_idade(1993,2010) #aqui o valor 2026 do parâmetro current_year é ignorado, sendo substituído por outro ano
+# print(f"Zayne tem {idade_zay} anos")
 
-#################################
-'''
-Originalmente, a variável "idade" não funciona sozinha, pois está contida DENTRO da função "calcular_idade".
-Por isso é necessário o "return"
-Como contornar isso?
-É necessário editar a variável como "global".
-'''
-####################################
-def calcular_imc(peso,altura):
-    imc = peso/altura**2
-    return imc
+# #################################
+# '''
+# Originalmente, a variável "idade" não funciona sozinha, pois está contida DENTRO da função "calcular_idade".
+# Por isso é necessário o "return"
+# Como contornar isso?
+# É necessário editar a variável como "global".
+# '''
+# ####################################
+# def calcular_imc(peso,altura):
+#     imc = peso/altura**2
+#     return imc
 
-resultado = calcular_imc(peso=70,altura=1.75)
-print(f"O imc é {resultado:.2f}")
+# resultado = calcular_imc(peso=70,altura=1.75)
+# print(f"O imc é {resultado:.2f}")
+
+####################################################
+def maior_30(*args): #args apontam que não se sabe quantos parâmetros uma função possuirá.
+    print(args)
+    print(type(args))
+    for num in args:
+        if num > 30:
+            print(f"Número(s) maior que 30: {num}")
+
+maior_30(10,25,32,77,9)
+print()
+maior_30(99,24,80)
+print()
+maior_30(30,29,41)
