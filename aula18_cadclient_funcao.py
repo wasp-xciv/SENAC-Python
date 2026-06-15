@@ -11,7 +11,7 @@ def mostrar_menu():
 def cadastrar_cliente():
     nome = input("Nome do cliente: ")
     clientes.append(nome)
-print("Cliente cadastrado!")
+    print("Cliente cadastrado!")
 
 def listar_clientes():
     print("\nClientes:")
