@@ -17,10 +17,10 @@ saudacao()
 
 # #é possível definir que tipo de parâmetro vai dentro da função:
 
-# def imprime_nome(nome):
-#     print(f"Nome:{nome}")
+# def imprime_nome(nome,idade):
+#     print(f"Nome:{nome}\nIdade:{idade} anos")
 
-# imprime_nome("João")
+# imprime_nome("João") #informar só um dos parâmetros causa erro
 
 # #reaproveitando a função saudação:
 
@@ -76,7 +76,7 @@ saudacao()
 # excluir_aluno()
 # listar_alunos()
 
-##Resultados com return: a exportação de uma operação dentro da função.
+##Resultados com return: funções com RETORNO de valor.
 # def soma(a,b):
 #     resultado = a + b
 #     return resultado
@@ -99,26 +99,38 @@ saudacao()
 # Originalmente, a variável "idade" não funciona sozinha, pois está contida DENTRO da função "calcular_idade".
 # Por isso é necessário o "return"
 # Como contornar isso?
-# É necessário editar a variável como "global".
+# É necessário editar a variável como "global". "Variável local" significa que ela está presa DENTRO da função. Para que possa ser usada fora, ela precisa do return pra se tornar GLOBAL.
 # '''
 # ####################################
 # def calcular_imc(peso,altura):
 #     imc = peso/altura**2
 #     return imc
 
-# resultado = calcular_imc(peso=70,altura=1.75)
+# resultado = calcular_imc(70,1.75)
 # print(f"O imc é {resultado:.2f}")
 
 ####################################################
-def maior_30(*args): #args apontam que não se sabe quantos parâmetros uma função possuirá.
-    print(args)
-    print(type(args))
-    for num in args:
-        if num > 30:
-            print(f"Número(s) maior que 30: {num}")
+# def maior_30(*args): #args apontam que não se sabe quantos parâmetros uma função possuirá.
+#     print(args)
+#     print(type(args))
+#     for num in args:
+#         if num > 30:
+#             print(f"Número(s) maior que 30: {num}")
 
-maior_30(10,25,32,77,9)
-print()
-maior_30(99,24,80)
-print()
-maior_30(30,29,41)
+# maior_30(10,25,32,77,9)
+# print()
+# maior_30(99,24,80)
+# print()
+# maior_30(30,29,41)
+
+# def verificar_maioridade(idade):
+#     if idade >= 18:
+#         return True
+#     else:
+#         return False
+    
+# idade = int(input("Sua idade: "))
+# if verificar_maioridade(idade):
+#     print("É maior de idade")
+# else:
+#     print("É menor de idade")
