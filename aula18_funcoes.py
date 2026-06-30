@@ -13,7 +13,7 @@ saudacao()
 #     print("OOOOOOOOOOOOOOOOOOOOOOOI")
 #     print("\nTudo bem?")
 
-# saudacao()
+# saudacao() #chama a função
 
 # #é possível definir que tipo de parâmetro vai dentro da função:
 
@@ -31,7 +31,7 @@ saudacao()
 
 # ################################################
 
-# def imprime_nome(nome = "não informado", idade = "não infomada"):
+# def imprime_nome(nome = "não informado", idade = "não informada"):
 #     print(f"Nome do cliente: {nome}, Idade: {idade}")
 
 # imprime_nome("Ana Silva",25)
