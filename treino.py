@@ -14,7 +14,7 @@ notas_unicas = []
 notas_repetidas = []
 for nota in notas:
 
-    
+
 # 1. Encontre as notas que aparecem apenas uma vez
 # 2. Crie uma lista com essas notas únicas
 # 3. Calcule a média dessas notas
