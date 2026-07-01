@@ -1,4 +1,3 @@
-
 clientes = []
 def mostrar_menu():
     print("\n--- Menu ---")
