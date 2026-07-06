@@ -41,3 +41,5 @@ print(f"O resultado de '{a} ** {b}' é",a**b)
 print("-----"*20)
 ano=12
 print(f"{nome}, ao fim de um ano, o funcionário terá recebido {salario*ano:,.2f}")
+
+#
