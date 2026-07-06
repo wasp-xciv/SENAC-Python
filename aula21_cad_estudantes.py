@@ -38,61 +38,69 @@ Sistema de Cadastro de Estudantes:
 
 # print(125*"*")
 
-# #Agora sem declarar parâmetros:
-# class Cliente:
-#     def __init__(self):
-#         #attribs
-#         self.codigo = ""
-#         self.nome = ""
-#         self.telefone = ""
-#         #métodos de instância
+#Agora sem declarar parâmetros:
+class Cliente:
+    '''
+    Classe para representar um cliente. Cadastro de clientes.'''
+    def __init__(self):
+        '''Inicializa um objeto da classe Cliente com atributos'''
+        #attribs
+        self.codigo = ""
+        self.nome = ""
+        self.telefone = ""
+        #métodos de instância
     
-#     def cadastrar_cliente(self):
-#         #Lógica para cadastrar cliente (não é realmente a melhor...)
-#         self.codigo = input("Digite o código do cliente: ")
-#         self.nome = input("Digite nome do cliente: ")
-#         self.telefone = input("Digite o telefone do cliente: ")
-#         print("Cliente cadastrado com sucesso!\n")
 
-#     def mostrar_dados(self):
-#         print(f"Código: {self.codigo}")
-#         print(f"Nome: {self.nome}")
-#         print(f"Telefone: {self.telefone}")
+def cadastrar_cliente(self):
+    '''Lógica para cadastrar cliente (não é realmente a melhor...)'''
     
-#     def atualizar_cliente(self):
-#         #Lógica para atualizar os dados do cliente
-#         self.codigo = input("\nDigite o novo código do cliente: ")
-#         self.nome = input("Digite o novo nome do cliente: ")
-#         self.telefone = input("Digite o novo telefone do cliente: ")
-#         print("Cliente atualizado com sucesso!")
+    self.codigo = input("Digite o código do cliente: ")
+    self.nome = input("Digite nome do cliente: ")
+    self.telefone = input("Digite o telefone do cliente: ")
+    print("Cliente cadastrado com sucesso!\n")
 
-#     def excluir_cliente(self):
-#         select_cod = input("\nDigite o código do cliente que deseja excluir: ")
-#         if select_cod == self.codigo:
-#             self.codigo = ""
-#             self.nome = ""
-#             self.telefone = ""
-#             print("Cliente excluído com sucesso!")
-#         else:
-#             print("Código do cliente não encontrado.")
+def mostrar_dados(self):
+    '''Lógica para mostrar os dados do Cliente'''
+
+    print(f"Código: {self.codigo}")
+    print(f"Nome: {self.nome}")
+    print(f"Telefone: {self.telefone}")
+
+def atualizar_cliente(self):
+    '''Lógica para atualizar os dados do cliente'''
     
-# #Criando o maldito clienteeeeeeeeeeeeeeeeeeee
+    self.codigo = input("\nDigite o novo código do cliente: ")
+    self.nome = input("Digite o novo nome do cliente: ")
+    self.telefone = input("Digite o novo telefone do cliente: ")
+    print("Cliente atualizado com sucesso!")
 
-# cliente1 = Cliente()
-# cliente1.cadastrar_cliente()
-# cliente1.mostrar_dados()
-# cliente1.atualizar_cliente()
-# cliente1.mostrar_dados()
-# cliente1.excluir_cliente()
-# cliente1.mostrar_dados()
+def excluir_cliente(self):
+    select_cod = input("\nDigite o código do cliente que deseja excluir: ")
+    if select_cod == self.codigo:
+        self.codigo = ""
+        self.nome = ""
+        self.telefone = ""
+        print("Cliente excluído com sucesso!")
+    else:
+        print("Código do cliente não encontrado.")
+    
+#Criando o maldito clienteeeeeeeeeeeeeeeeeeee
 
-# cliente2 = Cliente()
-# cliente2.cadastrar_cliente()
-# cliente2.mostrar_dados()
-# cliente2.atualizar_cliente()
-# cliente2.mostrar_dados()
-# cliente2.excluir_cliente()
-# cliente2.mostrar_dados()
+cliente1 = Cliente()
+cliente1.cadastrar_cliente()
+cliente1.mostrar_dados()
+cliente1.atualizar_cliente()
+cliente1.mostrar_dados()
+cliente1.excluir_cliente()
+cliente1.mostrar_dados()
+
+cliente2 = Cliente()
+cliente2.cadastrar_cliente()
+cliente2.mostrar_dados()
+cliente2.atualizar_cliente()
+cliente2.mostrar_dados()
+cliente2.excluir_cliente()
+cliente2.mostrar_dados()
 
 class Gatos:
     def __init__(self):
