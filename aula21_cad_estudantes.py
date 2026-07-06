@@ -146,7 +146,7 @@ while True:
     if opcao == "1":
         cliente = Cliente()
         cliente.cadastrar_cliente()
-        cliente.append(cliente)
+        clientes.append(cliente)
     
     elif opcao == "2":
         if clientes:        #"se" a lista "clientes" não está vazia...
@@ -166,7 +166,7 @@ while True:
 
     elif opcao == "4":
         cliente.excluir_cliente()
-        cliente.remove(cliente)
+        clientes.remove(cliente)
     
     elif opcao == "5":
         print("Saindo do sistema...ヾ(￣▽￣) Bye~Bye~")
