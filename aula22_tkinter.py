@@ -17,7 +17,7 @@
 # """
 # Criação de rótulo/label:"""
 # rotulo = tkinter.Label(janela,text="🐕‍🦺PetLink🐈",font=("Courier",40),bg="#467373",fg="#E4D3E4")
-# rotulo.pack(fill=tkinter.X,pady=170)
+# rotulo.pack(fill=tkinter.X,pady=170)  #PADX é para mexer horizontalmente, PADY é para mexer verticalmente!
 # rotulo2 = tkinter.Label(janela,text="Bem-vindo!(＾Ｕ＾)ノ~ＹＯ",font=("Courier",15,"bold"),bg="#734673",fg="#E4D3E4")
 # rotulo2.pack(pady=10)
 
@@ -55,3 +55,5 @@ botao4.pack(fill=tkinter.X,pady=5,padx=30)
 botao5=tkinter.Button(janela,text="Sair",bg="#F3F2F2",fg="#E31717",command=janela.destroy)
 botao5.pack(fill=tkinter.X,pady=30,padx=100)
 janela.mainloop()
+
+
