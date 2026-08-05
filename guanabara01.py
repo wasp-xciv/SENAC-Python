@@ -50,9 +50,23 @@ Exercícios Guanabara
 # print(f"{n} x {10} = {n*10}")
 
 #8 Conversor de Moedas
-wallet = float(input("Quanto dinheiro você tem? R$"))
-dol = wallet / 5.00
-print(f"Você tem R${wallet:,.2f}.\nIsso equivale a US${dol:,.2f}")
+# wallet = float(input("Quanto dinheiro você tem? R$"))
+# dol = wallet / 5.00
+# print(f"Você tem R${wallet:,.2f}.\nIsso equivale a US${dol:,.2f}")
 
+#9 Calculando descontos
+# product = float(input("Digite o preço do produto:\nR$"))
+# discount = product*5/100
+# final_price = product - discount
+# print(f"Você tem direito à 5% de desconto!\nNovo preço: R${final_price:,.2f}")
 
-#9 
+#10 Conversor de Temperatura
+# celsius = float(input("Digite a temperatura em Celsius:\n"))
+# farenheit = (celsius * 1.8) + 32
+# print(f"{celsius:,.1f}°C equivale à {farenheit:,.1f}°F.")
+
+#Aluguel de Carros: R$60,00/dia e R$0,15/km
+dias = int(input("Aluguel de quantos dias?\n"))
+km = float(input("Quantos kms rodados?\n"))
+carro = (dias*60) + (km*0.15) 
+print(f"Dias alugados: {dias} dia(s)\nQuilômetros rodados: {km}km\nTotal:R${carro:,.2f}")
