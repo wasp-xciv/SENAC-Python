@@ -48,7 +48,7 @@ def popular(lista):
 
 
 def filtrar():
-    termo - entry_busca.get().lower()
+    termo = entry_busca.get().lower()
     cat = var_cat.get()
     res = [p for p in produtos
            if termo in p["nome"].lower() and (cat == "Todos" or p["cat"] == cat)]
