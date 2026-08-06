@@ -36,7 +36,7 @@ tree = ttk.Treeview(root,columns=cols,show="headings",height=10)
 
 for c in cols:
     tree.heading(c,text=c)
-    tree.column(c,width=130 if c == "Produto" else 100)
+    tree.column(c,width=130 if c == "Produto" else 100, anchor = "c" if c == "Estoque" else "w")
 tree.pack(fill="x",padx=10,pady=8)
 
 def popular(lista):
