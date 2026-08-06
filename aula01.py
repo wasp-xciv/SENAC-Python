@@ -10,7 +10,7 @@ print("Altura:",altura)
 print("Gênero:",genero)
 print("Nome:", nome)
 print("-----"*10)
-# """ print(type(idade))
+# """ print(type(idade)) #
 # print(type(salario))
 # print(type(altura))
 # print(type(genero))
